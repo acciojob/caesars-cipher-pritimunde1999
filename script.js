@@ -35,8 +35,8 @@ function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
 
-	let lower = charCodeAt(A);
-	let upper = charCodeAt(Z);
+	let lower = "A".charCodeAt(0);
+	let upper = "Z".charCodeAt(0);
      
 
 	for(let i=0; i<encodedStr.length; i++)
