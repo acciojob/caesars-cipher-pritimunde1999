@@ -38,20 +38,21 @@ function rot13(encodedStr) {
 	let lower = "A".charCodeAt(0);
 	let upper = "Z".charCodeAt(0);
      
-
+    let ans ="";
 	for(let i=0; i<encodedStr.length; i++)
 		{
 			let num = encodedStr.charCodeAt(i);
 			if(num>=lower && num<=upper)
 			{
-				decodedArr.push(lookup[encodedStr.charAt(i)]);
+				ans+=(lookup[encodedStr.charAt(i)]);
 			}
 			else
 			{
-				decodedArr.push(encodedStr.charAt(i));
+				ans+=(encodedStr.charAt(i));
 			}
 		}
 
+	decodedArr.push(ans);
   return decodedArr; //return decodedArr
 }
 
